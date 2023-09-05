@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3567a73a.css",
-    "main.js": "/static/js/main.a1b65e2b.js",
-    "static/js/787.1c1b3ed8.chunk.js": "/static/js/787.1c1b3ed8.chunk.js",
-    "index.html": "/index.html",
-    "main.3567a73a.css.map": "/static/css/main.3567a73a.css.map",
-    "main.a1b65e2b.js.map": "/static/js/main.a1b65e2b.js.map",
-    "787.1c1b3ed8.chunk.js.map": "/static/js/787.1c1b3ed8.chunk.js.map"
+    "main.css": "/PurpleMaze/static/css/main.3567a73a.css",
+    "main.js": "/PurpleMaze/static/js/main.dcc40657.js",
+    "static/js/787.1c1b3ed8.chunk.js": "/PurpleMaze/static/js/787.1c1b3ed8.chunk.js",
+    "index.html": "/PurpleMaze/index.html",
+    "main.3567a73a.css.map": "/PurpleMaze/static/css/main.3567a73a.css.map",
+    "main.dcc40657.js.map": "/PurpleMaze/static/js/main.dcc40657.js.map",
+    "787.1c1b3ed8.chunk.js.map": "/PurpleMaze/static/js/787.1c1b3ed8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3567a73a.css",
-    "static/js/main.a1b65e2b.js"
+    "static/js/main.dcc40657.js"
   ]
 }
