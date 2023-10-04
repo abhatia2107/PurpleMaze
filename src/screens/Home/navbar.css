@@ -1,12 +1,13 @@
  .logout-header {
+    
     -webkit-backdrop-filter: blur(54px) brightness(100%);
     backdrop-filter: blur(54px) brightness(100%);
     background-color: #ffffffcc;
-    height: 96px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 1440px;
+    height: 96px; 
+    left: 0; 
+     position: fixed;
+     top: 0;
+    width: 1440px; 
   }
   
    .frame-47 {
@@ -140,3 +141,39 @@
     white-space: nowrap;
     width: fit-content;
   }
+
+
+  @media(max-width:1440px)
+  {
+    .logout-header{
+      width: 1400px;
+      margin-right: 20%;
+      left: -15px;
+    }
+    .text-wrapper-47{
+      font-size: 19px;
+      font-weight: 500;
+    }
+    .text-wrapper-3{
+      font-size: 19px;
+      font-weight: 500;
+    }
+    .text-center .new-user{
+      margin-top: 20px;
+    }
+    .footer{
+      width: fit-content;
+    }
+  }
+  @media(max-width:375){
+    body{
+      display: block;
+      overflow-x: hidden;
+    }
+    .logout-header{
+      display: block;
+      max-width: 1200px;
+    }
+ 
+  }
+  

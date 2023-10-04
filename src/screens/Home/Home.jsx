@@ -9,6 +9,7 @@ import PopupMsg from "../Pop-Ups/PopupMsg";
 export const Home = () => {
   const videoUrl = "https://www.youtube.com/watch?v=og_ob8Xdlvk";
   return (
+    <div className="container-fluid">
     <div className="homePage">
       <div className="home">
         <div className="div">
@@ -451,6 +452,8 @@ Now, picture the potential impact if you take action on this data and begin prio
       </div>
       <Footer />
       <Navbar />
+    </div>
+
     </div>
   );
 };
