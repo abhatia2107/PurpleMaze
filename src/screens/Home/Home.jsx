@@ -12,36 +12,36 @@ export const Home = () => {
   return (
     <div className="homePage complete_screen">
       <Navbar />
-      <div class="flex flex-col w-full overall lg:items-center lg:flex-row lg:justify-between lg:text-white lg:justify-items-center">
-        <div class="h-full lg:w-1/2 2xl:w-1/2 lg:h-full">
-          <div class="flex flex-col px-16 py-10 lg:py-18 lg:my-6 max-w-2xl 2xl:max-w-6xl">
+      <div className="flex flex-col w-full overall lg:items-center lg:flex-row lg:justify-between lg:text-white lg:justify-items-center">
+        <div className="h-full lg:w-1/2 2xl:w-1/2 lg:h-full">
+          <div className="flex flex-col px-16 py-10 lg:py-18 lg:my-6 max-w-2xl 2xl:max-w-6xl">
             <img
-              class="w-10 h-10 doodle_1_position"
+              className="w-10 h-10 doodle_1_position"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/64088dfd259d863110d90801-doodle1-1-1.svg"
             />
-            <span class="content-1 text-4xl lg:text-6xl 2xl:text-8xl leading-loose">
+            <span className="content-1 text-4xl lg:text-6xl 2xl:text-8xl leading-loose">
               Find best creatives &amp; Creators for
             </span>
-            <span class="blue-italic-style text-4xl lg:text-6xl 2xl:text-8xl italic lg:leading-relaxed">
+            <span className="blue-italic-style text-4xl lg:text-6xl 2xl:text-8xl italic lg:leading-relaxed">
               Social media
             </span>
-            <span class="content-1 text-4xl lg:text-6xl 2xl:text-8xl leading-relaxed">
+            <span className="content-1 text-4xl lg:text-6xl 2xl:text-8xl leading-relaxed">
               Marketing
             </span>
-            <span class="content-2 py-8 2xl:text-4xl">
+            <span className="content-2 py-8 2xl:text-4xl">
               We analyze over 100,000 fastest growing D2C brand creatives and
               handpick the best ones for you.
             </span>
-            <div class="flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
               <Link to="/signup">
-                <button class="signup_color min-w-fit 2xl:text-4xl	 px-6 py-2 my-1 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
+                <button className="signup_color min-w-fit 2xl:text-4xl	 px-6 py-2 my-1 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
                   Get Started
                 </button>
               </Link>
 
               <a
                 href="/#see-pricing"
-                class="py-2 min-w-fit px-2 see_pricing lg:mx-4 2xl:text-4xl"
+                className="py-2 min-w-fit px-2 see_pricing lg:mx-4 2xl:text-4xl"
               >
                 {" "}
                 See Pricing
@@ -52,90 +52,95 @@ export const Home = () => {
 
         <PopupMsg />
 
-        <div class=" h:full lg:h-full lg:w-1/2">
+        <div className=" h:full lg:h-full lg:w-1/2">
           <img
-            class="object-cover h-1/2 w-full"
+            className="object-cover h-1/2 w-full"
             src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/rectangle-6.png"
           />
         </div>
       </div>
-      <div class="flex flex-col items-center py-20 complete_screen">
-        <div class="flex flex-col items-center">
-          <span class="uppercase text-sm text-color-3 py-4">
+      <div className="flex flex-col items-center py-20 complete_screen">
+        <div className="flex flex-col items-center">
+          <span className="uppercase text-sm text-color-3 py-4">
             Why choose us?
           </span>
-          <span class="text-xl py-2 sm:text-4xl">
-            Here are few <span class="blue-italic-style">Reasons</span> why our
+          <span className="text-xl py-2 sm:text-4xl">
+            Here are few <span className="blue-italic-style">Reasons</span> why
+            our
           </span>
-          <span class="text-xl py-2 sm:text-4xl">
+          <span className="text-xl py-2 sm:text-4xl">
             customes choose PurpleMaze
           </span>
         </div>
-        <div class="flex w-full justify-center items-center flex-col lg:flex-row py-8 ">
-          <div class="flex flex-col lg:w-1/3 justify-between lg:pl-8 lg:pr-4 space-y-6 max-w-[320px]">
-            <div class="flex h-1/2 py-4 bg-white rounded-md px-2 min-w-[280px] max-w-[320px] mx-2">
-              <span class="text-5xl px-3 text-color-4">01</span>
-              <div class="text flex flex-col lg:space-y-5">
-                <span class="text-base font-medium py-1 text-color">
+        <div className="flex w-full justify-center items-center flex-col lg:flex-row py-8 ">
+          <div className="flex flex-col lg:w-1/3 justify-between lg:pl-8 lg:pr-4 space-y-6 max-w-[320px]">
+            <div className="flex h-1/2 py-4 bg-white rounded-md px-2 min-w-[280px] max-w-[320px] mx-2">
+              <span className="text-5xl px-3 text-color-4">01</span>
+              <div className="text flex flex-col lg:space-y-5">
+                <span className="text-base font-medium py-1 text-color">
                   Access to top creatives
                 </span>
-                <p class="text-sm text-color-3">
+                <p className="text-sm text-color-3">
                   3000+ top performing creatives
                 </p>
-                <p class="text-sm text-color-3">
+                <p className="text-sm text-color-3">
                   Filter by brand, industry and format
                 </p>
-                <p class="text-sm text-color-3">
+                <p className="text-sm text-color-3">
                   50+ ecomm niches & 1000+ brands
                 </p>
               </div>
             </div>
-            <div class="flex h-1/2  py-4 bg-white rounded-md px-2 min-w-[280px] mx-2">
-              <span class="text-5xl px-3 text-color-4">02</span>
-              <div class="text flex flex-col lg:space-y-5">
-                <span class="text-base font-medium py-1 text-color">
+            <div className="flex h-1/2  py-4 bg-white rounded-md px-2 min-w-[280px] mx-2">
+              <span className="text-5xl px-3 text-color-4">02</span>
+              <div className="text flex flex-col lg:space-y-5">
+                <span className="text-base font-medium py-1 text-color">
                   Learn from the top brands
                 </span>
-                <p class="text-sm text-color-3">
+                <p className="text-sm text-color-3">
                   View & analyze ads, generate 6x ROI
                 </p>
-                <p class="text-sm text-color-3">
+                <p className="text-sm text-color-3">
                   Recreate and go viral and grow big
                 </p>
               </div>
             </div>
           </div>
-          <div class="py-4 px-2 mx-1 ">
+          <div className="py-4 px-2 mx-1 ">
             <img
-              class="object-contain"
+              className="object-contain"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/rectangle-7.svg"
             />
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col justify-center lg:flex-row complete_screen">
-        <div class="flex flex-col px-9 ml-5">
-          <span class="uppercase text-sm text-color-3 py-4">What we do?</span>
-          <span class="text-xl py-2 sm:text-4xl">The service we offer is</span>
-          <span class="text-xl py-2 sm:text-4xl">
-            designed <span class="blue-italic-style">Specifically</span> to
+      <div className="flex flex-col justify-center lg:flex-row complete_screen">
+        <div className="flex flex-col px-9 ml-5">
+          <span className="uppercase text-sm text-color-3 py-4">
+            What we do?
           </span>
-          <span class="text-xl py-2 sm:text-4xl">meet your needs</span>
-          <span class="text-color-3 py-8 max-w-[75%]">
+          <span className="text-xl py-2 sm:text-4xl">
+            The service we offer is
+          </span>
+          <span className="text-xl py-2 sm:text-4xl">
+            designed <span className="blue-italic-style">Specifically</span> to
+          </span>
+          <span className="text-xl py-2 sm:text-4xl">meet your needs</span>
+          <span className="text-color-3 py-8 max-w-[75%]">
             We analyze over 100,000 fastest growing D2C brand creatives and
             handpick the best ones for you.
           </span>
-          <div class="flex items-center space-x-4">
+          <div className="flex items-center space-x-4">
             <Link to="/signup">
-              <button class="signup_color min-w-fit	 px-6 py-2 my-1 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
+              <button className="signup_color min-w-fit	 px-6 py-2 my-1 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
                 Get Started
               </button>
             </Link>
 
             <a
               href="/#see-pricing"
-              class="py-2 min-w-fit px-2 see_pricing lg:mx-4"
+              className="py-2 min-w-fit px-2 see_pricing lg:mx-4"
             >
               {" "}
               See Pricing
@@ -143,127 +148,132 @@ export const Home = () => {
           </div>
         </div>
 
-        <div class="flex flex-col items-center justify-around space-y-14 py-4">
-          <div class="flex flex-row space-x-6 items-center bg-white px-4 py-6 max-w-[80%]">
+        <div className="flex flex-col items-center justify-around space-y-14 py-4">
+          <div className="flex flex-row space-x-6 items-center bg-white px-4 py-6 max-w-[80%]">
             <img
-              class="w-20 h-20"
+              className="w-20 h-20"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64d90915bde965d8a1d78907/img/image-11@2x.png"
             />
-            <div class="flex flex-col space-y-4">
-              <span class="bold">Trusted by 100+ brands & agencies.</span>
+            <div className="flex flex-col space-y-4">
+              <span className="bold">Trusted by 100+ brands & agencies.</span>
             </div>
           </div>
-          <div class="flex flex-row space-x-6 items-center bg-white px-4 py-6 mx-8 max-w-[80%]">
+          <div className="flex flex-row space-x-6 items-center bg-white px-4 py-6 mx-8 max-w-[80%]">
             <img
-              class="w-20 h-20"
+              className="w-20 h-20"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/image-12@2x.png"
             />
-            <div class="flex flex-col space-y-4">
-              <span class="bold">24/7 prompt customer service</span>
+            <div className="flex flex-col space-y-4">
+              <span className="bold">24/7 prompt customer service</span>
             </div>
           </div>
-          <div class="flex flex-row space-x-6 items-center bg-white px-4 py-6 max-w-[80%]">
+          <div className="flex flex-row space-x-6 items-center bg-white px-4 py-6 max-w-[80%]">
             <img
-              class="w-20 h-20"
+              className="w-20 h-20"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64d90915bde965d8a1d78907/img/image-13@2x.png"
             />
-            <div class="flex flex-col space-y-4">
-              <span class="bold">7 Day Money Back Guarantee.</span>
+            <div className="flex flex-col space-y-4">
+              <span className="bold">7 Day Money Back Guarantee.</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col items-center py-20 space-y-10 overall">
-        <div class="flex flex-col items-center">
-          <span class="uppercase text-sm text-color-3 py-4">our pricing</span>
-          <span class="text-xl py-2 sm:text-4xl">
+      <div className="flex flex-col items-center py-20 space-y-10 overall">
+        <div className="flex flex-col items-center">
+          <span className="uppercase text-sm text-color-3 py-4">
+            our pricing
+          </span>
+          <span className="text-xl py-2 sm:text-4xl">
             We offer great prices, premium products
           </span>
-          <span class="text-xl py-2 sm:text-4xl">
-            and <span class="blue-italic-style">Quality</span> Services for your
-            product
+          <span className="text-xl py-2 sm:text-4xl">
+            and <span className="blue-italic-style">Quality</span> Services for
+            your product
           </span>
         </div>
 
         <div
-          class="flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-9 "
+          className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-9 "
           id="see-pricing"
         >
-          <div class="flex flex-col bg-white py-2 lg:my-0">
-            <div class="flex flex-col items-center space-y-4 pt-4 px-4">
-              <div class="flex items-end space-x-3">
-                <span class="text-xl">₹</span>
-                <span class="text-6xl">0</span>
-                <span class="text-xl">/mo</span>
+          <div className="flex flex-col bg-white py-2 lg:my-0">
+            <div className="flex flex-col items-center space-y-4 pt-4 px-4">
+              <div className="flex items-end space-x-3">
+                <span className="text-xl">₹</span>
+                <span className="text-6xl">0</span>
+                <span className="text-xl">/mo</span>
               </div>
-              <span class="">Free Plan</span>
-              <div class="flex flex-col max-w-[320px] space-y-3 px-4">
-                <div class="flex space-x-3">
+              <span className="">Free Plan</span>
+              <div className="flex flex-col max-w-[320px] space-y-3 px-4">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">Search thousand of influencers</span>
+                  <span className="">Search thousand of influencers</span>
                 </div>
-                <div class="flex space-x-3">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">
+                  <span className="">
                     Manually purchase content from influencers
                   </span>
                 </div>
-                <div class="flex space-x-3">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">
-                    <span class="font-bold">10%</span> marketplace fee
+                  <span className="">
+                    <span className="font-bold">10%</span> marketplace fee
                   </span>
                 </div>
               </div>
-              <div class="flex flex-col items-center space-y-2 py-20">
+              <div className="flex flex-col items-center space-y-2 py-20">
                 <Link to="/signup">
-                  <button class="signup_color min-w-fit my-1 px-6 py-2 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
+                  <button className="signup_color min-w-fit my-1 px-6 py-2 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
                     Sign up
                   </button>
                 </Link>
-                <span class="pricing_bottom">Current Plan</span>
+                <span className="pricing_bottom">Current Plan</span>
               </div>
             </div>
           </div>
-          <div class="flex flex-col bg-white py-2 lg:my-0">
-            <div class="flex flex-col items-center space-y-4 pt-4 px-4">
-              <div class="flex items-end space-x-3">
-                <span class="text-xl">₹</span>
-                <span class="text-6xl">7999</span>
-                <span class="text-xl">/year</span>
+          <div className="flex flex-col bg-white py-2 lg:my-0">
+            <div className="flex flex-col items-center space-y-4 pt-4 px-4">
+              <div className="flex items-end space-x-3">
+                <span className="text-xl">₹</span>
+                <span className="text-6xl">7999</span>
+                <span className="text-xl">/year</span>
               </div>
-              <span class="">Pro Plan</span>
-              <div class="flex flex-col max-w-[320px] space-y-3 px-4">
-                <div class="flex space-x-3">
+              <span className="">Pro Plan</span>
+              <div className="flex flex-col max-w-[320px] space-y-3 px-4">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">Get access to 3000+ creatives</span>
+                  <span className="">Get access to 3000+ creatives</span>
                 </div>
-                <div class="flex space-x-3">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">
+                  <span className="">
                     Filter by brand, keyword, industry, format
                   </span>
                 </div>
-                <div class="flex space-x-3">
+                <div className="flex space-x-3">
                   <img src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/vuesax-bulk-tick-circle.svg" />
-                  <span class="">Wishlist and save</span>
+                  <span className="">Wishlist and save</span>
                 </div>
               </div>
-              <div class="flex flex-col items-center space-y-2 py-20">
+              <div className="flex flex-col items-center space-y-2 py-20">
                 <Link to="/signup">
-                  <button class="signup_color min-w-fit my-1 px-6 py-2 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
+                  <button className="signup_color min-w-fit my-1 px-6 py-2 rounded-full lg:px-6 lg:py-2 lg:rounded-full">
                     Sign up
                   </button>
                 </Link>
-                <span class="pricing_bottom">Cancel Anytime</span>
+                <span className="pricing_bottom">Cancel Anytime</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="px-20 py-10 overall">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 gap-y-8" id="faq">
+      <div className="px-20 py-10 overall">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-x-2 gap-y-8"
+          id="faq"
+        >
           <FoldableFAQ
             question="How do you select the best ads?"
             answer="We've devised a comprehensive evaluation protocol for the curation of Social Media ads.

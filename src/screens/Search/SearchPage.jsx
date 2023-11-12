@@ -84,7 +84,7 @@ export const SearchPage = () => {
   }, [page]);
 
   return (
-    <div class="flex flex-col">
+    <div className="flex flex-col">
       <LogInHeader />
       <EcommercePage
         products={products}

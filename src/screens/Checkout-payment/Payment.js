@@ -52,10 +52,10 @@ const Payment = () => {
 
   return (
     <>
-        <LogInHeader />
+      <LogInHeader />
 
-      <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-5 py-6 ">
-        <div class="article">
+      <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-5 py-6 ">
+        <div className="article">
           <div className="premium-product-checkout">
             <h2>Premium Purple Maze</h2>
             <div className="feature-list">
@@ -83,18 +83,19 @@ const Payment = () => {
           </div>
         </div>
         <div className="premium-upgrade">
-      <h1 className="premium-upgrade-title">Upgrade to Purplemaze Premium</h1>
-      {clientSecret && stripePromise && (
-        <Elements stripe={stripePromise} options={{ clientSecret }}>
-          <div className="checkout-container">
-            <CheckoutForm />
-          </div>
-        </Elements>
-      )}
-    </div>
+          <h1 className="premium-upgrade-title">
+            Upgrade to Purplemaze Premium
+          </h1>
+          {clientSecret && stripePromise && (
+            <Elements stripe={stripePromise} options={{ clientSecret }}>
+              <div className="checkout-container">
+                <CheckoutForm />
+              </div>
+            </Elements>
+          )}
+        </div>
       </div>
-      <Footer/>
-
+      <Footer />
     </>
   );
 };

@@ -17,22 +17,19 @@ const SignUp = () => {
   };
 
   const googleAuth = () => {
-		window.open(
-			`${BASE_AUTH_URL}/api/v1/google/login`,
-			"_self"
-		);
-	};
+    window.open(`${BASE_AUTH_URL}/api/v1/google/login`, "_self");
+  };
 
   const onSubmit = (values) => {
     axios
-      .post(BASE_AUTH_URL+"/api/v1/users/register", values)
+      .post(BASE_AUTH_URL + "/api/v1/users/register", values)
       .then((response) => {
-        if (response.status === 200){
-        localStorage.setItem("token", response.data.token);
-        localStorage.setItem("user", JSON.stringify(response.data.user));
-        localStorage.setItem("emailVerificationRequired", "true");
-        navigate("/");
-        } else{
+        if (response.status === 200) {
+          localStorage.setItem("token", response.data.token);
+          localStorage.setItem("user", JSON.stringify(response.data.user));
+          localStorage.setItem("emailVerificationRequired", "true");
+          navigate("/");
+        } else {
           navigate("/something-went-wrong");
         }
       })
@@ -55,7 +52,7 @@ const SignUp = () => {
   });
 
   return (
-    <div class="flex flex-col">
+    <div className="flex flex-col">
       <Navbar />
       <div className="centered-container">
         <div
@@ -159,11 +156,10 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <div class="pt-6">
-        <Footer/>
+      <div className="pt-6">
+        <Footer />
       </div>
     </div>
-
   );
 };
 

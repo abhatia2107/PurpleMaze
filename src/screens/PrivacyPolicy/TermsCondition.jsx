@@ -4,22 +4,18 @@ import { Footer } from "../../components/Footer";
 import LogInHeader from "../Search/LogInHeader";
 
 const TermsCondition = () => {
-  const accessAuth = JSON.parse(localStorage.getItem('accessAuth'));
+  const accessAuth = JSON.parse(localStorage.getItem("accessAuth"));
 
-  const renderHeader = accessAuth?.accessToken ? (
-    <LogInHeader />
-  ) : (
-    <Navbar />
-  );
+  const renderHeader = accessAuth?.accessToken ? <LogInHeader /> : <Navbar />;
   return (
-    <div class="flex flex-col">
+    <div className="flex flex-col">
       {renderHeader}
 
-      <div className="flex flex-col px-6 py-4" >
+      <div className="flex flex-col px-6 py-4">
         <h1 className="text-center font-bold">Terms and Conditions</h1>
         <p>
-          Welcome to PurpleMaze! This website is owned by One Orange Digital
-          and is operated under the brand name, Purple Maze(“we”, “us” or
+          Welcome to PurpleMaze! This website is owned by One Orange Digital and
+          is operated under the brand name, Purple Maze(“we”, “us” or
           “PurpleMaze”).
         </p>
         <p>
@@ -93,11 +89,11 @@ const TermsCondition = () => {
           the age of 18 (eighteen) should seek the consent of their
           parents/legal guardians before providing any information about
           themselves or their parents and other family members on the website.
-          Please be aware that Purplemaze reserves the right to revoke
-          your access to the website, subject to our reasonable discretion. In
-          this regard, we may also choose to suspend your Purple MazeAccount or
-          your access to the same. As a registered User, in such an event, you
-          may contact our support team to assist you/resolve the situation.
+          Please be aware that Purplemaze reserves the right to revoke your
+          access to the website, subject to our reasonable discretion. In this
+          regard, we may also choose to suspend your Purple MazeAccount or your
+          access to the same. As a registered User, in such an event, you may
+          contact our support team to assist you/resolve the situation.
         </p>
         <h5>Privacy</h5>
         <p>
@@ -142,29 +138,28 @@ const TermsCondition = () => {
           date information on this website, errors or omissions sometimes occur.
           Purple Mazemakes no warranties or representations as to the accuracy
           of this website. Under no circumstances, including, but not limited
-          to, negligence, shall One Orange Digital or Purple Mazeor any
-          party involved in creating, producing, or delivering the website be
-          liable to you for any direct, incidental, consequential, indirect, or
+          to, negligence, shall One Orange Digital or Purple Mazeor any party
+          involved in creating, producing, or delivering the website be liable
+          to you for any direct, incidental, consequential, indirect, or
           punitive damages that result from the use of, or the inability to use,
           the materials on this website, even if PurpleMazeor any authorized
           representative has been advised of the possibility of such damages. In
-          no event shall Purplemaze’s total liability to you for all
-          damages, losses, and causes of action exceed the amount paid by you,
-          if any, for accessing this website. Purple Mazealso assumes no
-          responsibility, and shall not be liable for, any damages to, or
-          viruses that may infect, your computer equipment or other property as
-          a result of your access to, use of, or browsing in the website or your
-          downloading of any materials, data, text, images, video, or audio from
-          this website.
+          no event shall Purplemaze’s total liability to you for all damages,
+          losses, and causes of action exceed the amount paid by you, if any,
+          for accessing this website. Purple Mazealso assumes no responsibility,
+          and shall not be liable for, any damages to, or viruses that may
+          infect, your computer equipment or other property as a result of your
+          access to, use of, or browsing in the website or your downloading of
+          any materials, data, text, images, video, or audio from this website.
         </p>
         <h5>Restrictions on use of Materials</h5>
         <p>
           Except as otherwise expressly permitted, no materials from this
           website or any website owned, operated, licensed or controlled by
-          Purplemaze may be copied, reproduced, republished, uploaded,
-          posted, transmitted, or distributed in any way. You may download
-          material displayed on this website for your use only provided you also
-          retain all copyright and other proprietary notices contained on the
+          Purplemaze may be copied, reproduced, republished, uploaded, posted,
+          transmitted, or distributed in any way. You may download material
+          displayed on this website for your use only provided you also retain
+          all copyright and other proprietary notices contained on the
           materials. You may not distribute, modify, transmit, reuse, repost, or
           use the content of this website for public or commercial purposes,
           including the text, images, audio, and video without PurpleMaze’s
@@ -175,9 +170,9 @@ const TermsCondition = () => {
         <h5>Trademarks and Copyrights</h5>
         <p>
           All trademarks, trade names, logos, copyrights, registrations, and
-          icons are proprietary to One Orange Digital. Nothing contained on
-          the website should be construed as granting, by implication, estoppel,
-          or otherwise, any license or right to use any trademark or other
+          icons are proprietary to One Orange Digital. Nothing contained on the
+          website should be construed as granting, by implication, estoppel, or
+          otherwise, any license or right to use any trademark or other
           intellectual property displayed on this website without the written
           permission of Purple Mazeor such third party that may own the
           trademarks displayed on this website. Your use of the trademarks
@@ -197,7 +192,7 @@ const TermsCondition = () => {
           Purple Maze support@purplemaze.co
         </p>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

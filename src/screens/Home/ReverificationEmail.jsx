@@ -11,34 +11,34 @@ import { Footer } from "../../components/Footer";
 
 const ReverificationEmail = () => {
   const navigate = useNavigate();
-    const initialValues = {
-        email: "",
-      };
-      const onSubmit = (values) => {
-        console.log(values);
-        axios.post(BASE_AUTH_URL+"/api/v1/users/email-reverification", values)
-        .then((response) => {
-          if (response.status === 200) {
-            localStorage.setItem('emailVerificationRequired', 'true');
-            navigate("/");
-          }
-        })
-        .catch((error) => {
-          if (error.response && error.response.status === 400) {
-            console.log("error",error)
-          }
-        });
-      
-      };
-      const validationSchema = Yup.object({
-        email: Yup.string()
-          .required("Email Address is required")
-          .email("Email Address must be a valid email address"),
-      });    
-    
+  const initialValues = {
+    email: "",
+  };
+  const onSubmit = (values) => {
+    console.log(values);
+    axios
+      .post(BASE_AUTH_URL + "/api/v1/users/email-reverification", values)
+      .then((response) => {
+        if (response.status === 200) {
+          localStorage.setItem("emailVerificationRequired", "true");
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        if (error.response && error.response.status === 400) {
+          console.log("error", error);
+        }
+      });
+  };
+  const validationSchema = Yup.object({
+    email: Yup.string()
+      .required("Email Address is required")
+      .email("Email Address must be a valid email address"),
+  });
+
   return (
     <div className="">
-   <Navbar/>
+      <Navbar />
       <div className="flex flex-col items-center items-stretch">
         <div className="centered-container">
           <div
@@ -52,9 +52,9 @@ const ReverificationEmail = () => {
           >
             <h1 className="text-center">ReVerification</h1>
             <Formik
-             initialValues={initialValues}
-             onSubmit={onSubmit}
-            validationSchema={validationSchema}
+              initialValues={initialValues}
+              onSubmit={onSubmit}
+              validationSchema={validationSchema}
             >
               {(formik) => (
                 <Form>
@@ -70,7 +70,7 @@ const ReverificationEmail = () => {
                       }
                     />
                   </div>
-                  <PopupReset/>
+                  <PopupReset />
                   <button
                     type="submit"
                     className="btn btn-primary btn-block w-100 circular-button"
@@ -83,11 +83,10 @@ const ReverificationEmail = () => {
           </div>
         </div>
       </div>
-      <div class="pt-4">
-        
-      <Footer/>
+      <div className="pt-4">
+        <Footer />
       </div>
-          </div>
-      );
+    </div>
+  );
 };
 export default ReverificationEmail;

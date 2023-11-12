@@ -12,23 +12,19 @@ const FoldableFAQ = ({ question, answer }) => {
   const sanitizer = dompurify.sanitize;
 
   return (
-    <div
-      className="cursor-pointer flex items-center gap-3"
-      onClick={toggleFAQ}
-      class="flex space-x-4 px-6 items-center"
-    >
+    <div className="cursor-pointer flex items-center gap-3" onClick={toggleFAQ}>
       <img src={questionicon} alt="question mark" />
       {isOpen && (
-        <div class="flex flex-col space-y-2 pt-8">
-          <span class="font-bold">{question}</span>
+        <div className="flex flex-col space-y-2 pt-8">
+          <span className="font-bold">{question}</span>
           <p dangerouslySetInnerHTML={{ __html: sanitizer(answer) }}></p>
         </div>
       )}
 
       {!isOpen && (
-        <div class="flex space-x-2">
-          <span class="font-bold">{question}</span>
-          <div class="py-1">
+        <div className="flex space-x-2">
+          <span className="font-bold">{question}</span>
+          <div className="py-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
