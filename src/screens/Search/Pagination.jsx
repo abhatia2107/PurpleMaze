@@ -12,7 +12,7 @@ const Pagination = ({ currentPage, onPageChange }) => {
   };
 
   return (
-    <div className="pagination">
+    <div className="pagination py-4">
       <button onClick={handlePrevClick} disabled={currentPage === 1}>
         Prev
       </button>

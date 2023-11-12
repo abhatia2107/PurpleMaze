@@ -63,7 +63,7 @@ const ResetPassword = () => {
     return (
         <div>
         <LogInHeader />
-        <div className="outer-container padding-top-50">
+        <div className="outer-container padding-top-10">
             <div className="container">
                 <div className="centered-container">
                     <div className="wrapper">

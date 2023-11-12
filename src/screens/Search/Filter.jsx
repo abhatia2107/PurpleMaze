@@ -33,24 +33,7 @@ const Filter = ({onSelectedFiltersChange}) => {
   };
 
   return (
-    <div className="container">
-      {/* <div className="overlap">
-        <div className="frame-10">
-          <div className="frame-11">
-            <div className="text-wrapper-13">Search Here</div>
-          </div>
-          <img
-            className="vuesax-linear-search"
-            alt="Vuesax linear search"
-            src="https://generation-sessions.s3.amazonaws.com/14fee2d83e15953598a18f47bcb63aab/img/vuesax-linear-search-normal.svg"
-          />
-        </div>
-        <img
-          className="img-2"
-          alt="Img"
-          src="https://generation-sessions.s3.amazonaws.com/14fee2d83e15953598a18f47bcb63aab/img/64088dfd259d863110d90801-doodle1-1.svg"
-        />
-      </div> */}
+    <div className="flex items-center justify-center">
       <FilterDropdown data={filterData} onFilterChange={handleFilterChange} />     
     </div>
   );

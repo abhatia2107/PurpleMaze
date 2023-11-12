@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import './FilterDropdown.css';
+import React, { useState } from "react";
+import "./FilterDropdown.css";
 
 const FilterDropdown = ({ data, onFilterChange }) => {
   const [selectedFilters, setSelectedFilters] = useState({});
 
-  // Handle filter selection and update state
   const handleFilterChange = (label, option) => {
     const tempSelectedFilters = {
       ...selectedFilters,
@@ -16,14 +15,16 @@ const FilterDropdown = ({ data, onFilterChange }) => {
   };
 
   return (
-    <div className="filter-dropdown">
-         <div className="filter-group-container">
+    <div className="flex py-4 xl:flex-row flex-col space-y-2 xl:space-x-6">
       {data.map((filterGroup) => (
-        <div key={filterGroup.label} className="filter-group">
+        <div key={filterGroup.label} className="filter-group justify-between">
           <label>{filterGroup.label}</label>
           <select
-            onChange={(e) => handleFilterChange(filterGroup.label, e.target.value)}
-            value={selectedFilters[filterGroup.label] || ''}
+            className="min-w-[153px]"
+            onChange={(e) =>
+              handleFilterChange(filterGroup.label, e.target.value)
+            }
+            value={selectedFilters[filterGroup.label] || ""}
           >
             <option value="">All</option>
             {filterGroup.options.map((option) => (
@@ -34,7 +35,6 @@ const FilterDropdown = ({ data, onFilterChange }) => {
           </select>
         </div>
       ))}
-    </div>
     </div>
   );
 };

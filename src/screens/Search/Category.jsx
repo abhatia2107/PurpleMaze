@@ -16,7 +16,7 @@ const Category = ({ ad }) => {
     <div className="product-card">
       <div className="card-header"></div>
       <div className="card-body">
-        <div className="logo-name-container">
+        <div className="logo-name-container max-h-[40px]">
           <img className="logo-image" src={logo_resource_url} alt={name} />
           <h2 className="name">{name}</h2>
         </div>
@@ -30,20 +30,6 @@ const Category = ({ ad }) => {
         ) : (
           <img className="media-image" src={media_resource_url} alt={name} />
         )}
-        {/* <div className="content-details">
-          <h2 className="headline">{headline}</h2>
-          <a
-            className="display-link"
-            href={display_link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {display_link}
-          </a>
-        </div> */}
-        {/* <div className="cta-container">
-          <button className="cta-button">{call_to_action}</button>
-        </div> */}
       </div>
     </div>
   );

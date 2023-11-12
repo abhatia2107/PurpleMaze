@@ -5,7 +5,7 @@ import LogInHeader from "./LogInHeader";
 import EcommercePage from "../Search/EcommercePage";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { BASE_APP_URL } from "../../api/config";
+import { BASE_APP_URL, ROLES_LIST } from "../../api/config";
 
 export const SearchPage = () => {
   let { page } = useParams();
@@ -20,6 +20,18 @@ export const SearchPage = () => {
 
   const itemsPerPage = 30;
   const [filterparamsString, setfilterparamsString] = useState("");
+
+  const accessAuth = JSON.parse(localStorage.getItem("accessAuth"));
+  const [isPaidUser, setIsPaidUser] = useState(false);
+
+  useEffect(() => {
+    if (
+      accessAuth?.roles === ROLES_LIST.Admin ||
+      accessAuth?.roles === ROLES_LIST.PaidUser
+    ) {
+      setIsPaidUser(true);
+    }
+  }, []);
 
   useEffect(() => {
     const accessAuth = JSON.parse(localStorage.getItem("accessAuth"));
@@ -72,18 +84,14 @@ export const SearchPage = () => {
   }, [page]);
 
   return (
-    <div className="search">
-      <div className="div-2">
-        <LogInHeader />
-        <div className="cards">
-          {/* <Filter /> */}
-          <EcommercePage
-            products={products}
-            setFiltersChange={handleSetFiltersChange}
-          />
-        </div>
-        {/* Pagination */}
-        <div className="pagination">
+    <div className="flex flex-col">
+      <LogInHeader />
+      <EcommercePage
+        products={products}
+        setFiltersChange={handleSetFiltersChange}
+      />
+      {isPaidUser && (
+        <div className="pagination py-2 pb-4">
           {currentPageNumber > 0 && (
             <button
               disabled={page === "0"}
@@ -105,13 +113,8 @@ export const SearchPage = () => {
             </button>
           )}
         </div>
-        <Footer
-          className="footer-instance"
-          iconInstagramIconInstagram="https://generation-sessions.s3.amazonaws.com/14fee2d83e15953598a18f47bcb63aab/img/icon-instagram.svg"
-          iconTwitterIconTwitter="https://generation-sessions.s3.amazonaws.com/14fee2d83e15953598a18f47bcb63aab/img/icon-twitter.svg"
-          img="https://generation-sessions.s3.amazonaws.com/14fee2d83e15953598a18f47bcb63aab/img/--1.svg"
-        />
-      </div>
+      )}
+      <Footer />
     </div>
   );
 };

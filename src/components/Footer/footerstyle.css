@@ -1,3 +1,70 @@
+.footer_color{
+  background-color: #363f50;
+
+}
+.font_monasans{
+  font-family: "Mona-Sans-Medium", Helvetica;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+}
+
+.text-size-1{
+  color: #ffffff;
+  font-family: "Quicksand", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.text-size-2{
+  font-family: "Mona-Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-size-3{
+  font-family: "Mona-Sans-Medium", Helvetica;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.text-size-4{
+  font-family: "Mona-Sans-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text-size-5{
+  font-family: "Mona-Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* .input{
+  border-radius: -5px;
+} */
+
+.input_text{
+  -webkit-appearance: none;
+  border-radius: unset;
+
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+
+}
+
+.enter_mail{
+  background-color: #ffffff08;
+  border-color: #ffffff1a;
+}
+
 .footer {
   align-items: flex-start;
   background-color: #363f50;
@@ -23,6 +90,7 @@
   flex-direction: column;
   position: relative;
 }
+
 
 .footer .text-wrapper {
   color: #ffffff;

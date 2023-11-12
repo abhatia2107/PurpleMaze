@@ -22,7 +22,6 @@ const VideoModal = ({ videoUrl }) => {
         </div>
         <button className="modal-close" onClick={closeModal}></button>
       </div>
-      {/* <button  className="img-2" onClick={openModal}>Open Video</button> */}
       <img onClick={openModal}
                   className="vuesax-bulk-play"
                   alt="Vuesax bulk play"

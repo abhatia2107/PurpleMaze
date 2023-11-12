@@ -10,6 +10,7 @@ import ReverificationPopup from '../Pop-Ups/ReverificationPopup';
 import CheckEmailPopup from '../Pop-Ups/CheckEmailErrorPopup';
 import Navbar from './Navbar';
 import { BASE_AUTH_URL } from '../../api/config';
+import { Footer } from '../../components/Footer';
 
 
 const ForgotPassword = () => {
@@ -69,9 +70,9 @@ const ForgotPassword = () => {
       });
       
      return(
-        <div className='container'>
-                    <Navbar />
-            <div className="centered-container">
+        <div className='flex flex-col space-y-6'>
+              <Navbar />
+            <div className="mx-auto my-auto">
                 <div className="wrapper" style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
                     <h1 className='text-center'>Forgot Password?</h1>
                     <h6 className='text-center'>Reset Password in two quick steps</h6>
@@ -121,6 +122,7 @@ const ForgotPassword = () => {
             </div>
             {showPopup && <CheckEmailPopup onClose={() => setShowPopup(false)} />}
             {reverificationPopup && <ReverificationPopup onClose={() => setReverificationPopup(false)} />}
+            <Footer/>
         </div>
      )
 }

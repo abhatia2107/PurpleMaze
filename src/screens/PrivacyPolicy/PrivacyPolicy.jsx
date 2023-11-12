@@ -4,34 +4,27 @@ import { Footer } from "../../components/Footer";
 import LogInHeader from "../Search/LogInHeader";
 
 const PrivacyPolicy = () => {
-  const accessAuth = JSON.parse(localStorage.getItem('accessAuth'));
+  const accessAuth = JSON.parse(localStorage.getItem("accessAuth"));
 
-  const renderHeader = accessAuth?.accessToken ? (
-    <LogInHeader />
-  ) : (
-    <Navbar />
-  );
   return (
-    <div>
-      {renderHeader}
-
-      <div className="container" style={{ marginTop: 100 }}>
-        <h1 className="text-center">Privacy Policy</h1>
+    <div className="flex flex-col">
+      <Navbar />
+      <div className="flex flex-col px-6 py-8">
+        <h1 className="text-center font-bold">Privacy Policy</h1>
         <h5>1. Introduction</h5>
         <p>
-          We, at PurpleMaze (“we” or “us” or "PurpleMaze”) are
-          committed to respecting your online privacy and recognize the need for
-          appropriate protection and management of any personally identifiable
-          information you share with us. This Privacy Policy ("Policy")
-          describes how PurpleMaze collects, uses, discloses and transfers
-          personal information of users through its website(s) and
-          application(s), including through www.legaldjinn.com, mobile
-          applications and online services (collectively, the "Platform"). This
-          policy applies to those who visit the Platform, or whose information
-          PurpleMaze otherwise receives in connection with its services
-          (hereinafter collectively referred to as "Users"). For the purposes of
-          the Privacy Policy, "You" or "Your" shall mean the person who is
-          accessing the Platform.
+          We, at PurpleMaze (“we” or “us” or "PurpleMaze”) are committed to
+          respecting your online privacy and recognize the need for appropriate
+          protection and management of any personally identifiable information
+          you share with us. This Privacy Policy ("Policy") describes how
+          PurpleMaze collects, uses, discloses and transfers personal
+          information of users through its website(s) and application(s),
+          including through www.legaldjinn.com, mobile applications and online
+          services (collectively, the "Platform"). This policy applies to those
+          who visit the Platform, or whose information PurpleMaze otherwise
+          receives in connection with its services (hereinafter collectively
+          referred to as "Users"). For the purposes of the Privacy Policy, "You"
+          or "Your" shall mean the person who is accessing the Platform.
         </p>
         <h5>2. Types of Personal Information collected by PurpleMaze</h5>
         <p>
@@ -120,9 +113,8 @@ const PrivacyPolicy = () => {
         </h5>
         <p>
           Your Personal Information is collected and processed by Purplemaze
- based on the following legal grounds depending upon the
-          nature of Personal Information and the purposes for which it is
-          processed.
+          based on the following legal grounds depending upon the nature of
+          Personal Information and the purposes for which it is processed.
         </p>
         <h6>• Consent:</h6>
         <p>
@@ -136,12 +128,11 @@ const PrivacyPolicy = () => {
         <h6>• Compliance with a legal obligation:</h6>
         <p>
           Your Personal Information may be processed by PurpleMaze, to the
-          extent that such processing is necessary to allow Purplemaze
- to comply with a legal obligation. An example of this would be
-          if PurpleMaze is required to disclose your Personal Information to
-          respond to a court order or if PurpleMaze is required to retain
-          specific records for a fixed period to comply with requirements under
-          any applicable law.
+          extent that such processing is necessary to allow Purplemaze to comply
+          with a legal obligation. An example of this would be if PurpleMaze is
+          required to disclose your Personal Information to respond to a court
+          order or if PurpleMaze is required to retain specific records for a
+          fixed period to comply with requirements under any applicable law.
         </p>
         <h5>6. Information Sharing and Disclosure</h5>
         <p>
@@ -164,20 +155,20 @@ const PrivacyPolicy = () => {
           assets or any other situation involving the transfer of some or all of
           PurpleMaze’s business assets we may disclose Personal Information to
           those involved in the negotiation or transfer. • Third party service
-          providers and marketing partners that PurpleMaze engages
-          to a) provide services over the Platform on PurpleMaze’s
-          behalf (such as our logistics partners); b) maintain the Platform and
-          mailing lists; or c) communicate with you on PurpleMaze’s
-          behalf about offers relating to its products and/or services.
-          PurpleMaze will take reasonable steps to ensure that these third-party
-          service providers are obligated to protect your Personal Information
-          and are also subject to appropriate confidentiality / non-disclosure
-          obligations. PurpleMaze does not intend to transfer Personal
-          Information without your consent to third parties who are not bound to
-          act on PurpleMaze's behalf unless such transfer is legally required.
-          If your Personal Information is transferred outside India, we take the
-          necessary steps to protect your Personal Information in accordance
-          with applicable data protection laws.
+          providers and marketing partners that PurpleMaze engages to a) provide
+          services over the Platform on PurpleMaze’s behalf (such as our
+          logistics partners); b) maintain the Platform and mailing lists; or c)
+          communicate with you on PurpleMaze’s behalf about offers relating to
+          its products and/or services. PurpleMaze will take reasonable steps to
+          ensure that these third-party service providers are obligated to
+          protect your Personal Information and are also subject to appropriate
+          confidentiality / non-disclosure obligations. PurpleMaze does not
+          intend to transfer Personal Information without your consent to third
+          parties who are not bound to act on PurpleMaze's behalf unless such
+          transfer is legally required. If your Personal Information is
+          transferred outside India, we take the necessary steps to protect your
+          Personal Information in accordance with applicable data protection
+          laws.
         </p>
         <h5>7. Third Party Content:</h5>
         <p>
@@ -204,12 +195,12 @@ const PrivacyPolicy = () => {
         </p>
         <h5>9. Retention of Personal Information</h5>
         <p>
-          Your Personal Information will not be retained by Purplemaze
- any longer than it is necessary for the purposes for which the
-          Personal Information is processed and/or in accordance with legal,
-          regulatory, contractual or statutory obligations as applicable. At the
-          expiry of such periods, your Personal Information will be deleted or
-          archived in compliance with applicable laws
+          Your Personal Information will not be retained by Purplemaze any
+          longer than it is necessary for the purposes for which the Personal
+          Information is processed and/or in accordance with legal, regulatory,
+          contractual or statutory obligations as applicable. At the expiry of
+          such periods, your Personal Information will be deleted or archived in
+          compliance with applicable laws
         </p>
         <h5>10. Controlling your personal information</h5>
         <p>
@@ -241,23 +232,23 @@ const PrivacyPolicy = () => {
           important to us and PurpleMaze has invested significant resources to
           protect the safekeeping and confidentiality of your personal data.
           When using external service providers acting as processors, we require
-          that they adhere to the same standards as PurpleMaze
-          does. Regardless of where your Personal Information is transferred or
-          stored, we take all steps reasonably necessary to ensure that personal
-          data is kept secure. • We seek to ensure compliance with the
-          requirements of the Information Technology Act, 2000 and Rules made
-          there under to ensure the protection and preservation of your privacy.
+          that they adhere to the same standards as PurpleMaze does. Regardless
+          of where your Personal Information is transferred or stored, we take
+          all steps reasonably necessary to ensure that personal data is kept
+          secure. • We seek to ensure compliance with the requirements of the
+          Information Technology Act, 2000 and Rules made there under to ensure
+          the protection and preservation of your privacy.
         </p>
         <h5>12. Social media</h5>
         <p>
           PurpleMaze operates channels, pages and accounts on some social media
           sites to inform, assist and engage with customers. Please note that
           you must not communicate the following information to Purplemaze
- through such social media sites: - sensitive personal data
-          including (i) special categories of personal data meaning any
-          information revealing racial or ethnic origin, political opinions,
-          religious or philosophical beliefs, or trade union membership, and the
-          processing of genetic data, biometric data for the purpose of uniquely
+          through such social media sites: - sensitive personal data including
+          (i) special categories of personal data meaning any information
+          revealing racial or ethnic origin, political opinions, religious or
+          philosophical beliefs, or trade union membership, and the processing
+          of genetic data, biometric data for the purpose of uniquely
           identifying a natural person, data concerning health or data
           concerning a natural person's sex life or sexual orientation and (ii)
           other sensitive personal data such as criminal convictions and
@@ -283,20 +274,19 @@ const PrivacyPolicy = () => {
           account, credit cards or debit cards in the course of any online
           transactions or payments made for any products and/or services offered
           through the Platform. In case any Personal Information is shared by
-          you with PurpleMaze, which is not requested by PurpleMaze
-          during registration, (whether mandatorily or optionally), PurpleMaze
-          will not be liable for any information security breach or disclosure
-          in relation to such information. If you have any questions regarding
-          this Privacy Policy or the protection of your Personal Information,
-          please contact PurpleMaze’s Data Protection Officer/ Grievance
-          Officer.
+          you with PurpleMaze, which is not requested by PurpleMaze during
+          registration, (whether mandatorily or optionally), PurpleMaze will not
+          be liable for any information security breach or disclosure in
+          relation to such information. If you have any questions regarding this
+          Privacy Policy or the protection of your Personal Information, please
+          contact PurpleMaze’s Data Protection Officer/ Grievance Officer.
         </p>
         <h5>14. Data Protection Officer/ Grievance Officer</h5>
         <p>
           In case you have any complaints and/or grievances in relation to the
           processing of your Personal Information you can send your complaints
           via e-mail to our grievance officer: Grievance Officer Purplemaze
- Email: [•]
+          Email: [•]
         </p>
         <h2 className="text-center">Cookie Policy</h2>
         <h6>Introduction</h6>
@@ -305,21 +295,20 @@ const PrivacyPolicy = () => {
           and clear about how we use your information. In the spirit of
           transparency, this Policy provides detailed information about how and
           when we use cookies on our Websites. This cookie policy applies to any
-          purplemaze.co product or service that links to this
-          policy or incorporates it by reference.
+          purplemaze.co product or service that links to this policy or
+          incorporates it by reference.
         </p>
         <h6>a. Does purplemaze.co use cookies?</h6>
         <p>
-          purplemaze.co uses cookies, tags and other technologies
-          when you use any of the purplemaze.co websites, mobile
-          sites or mobile apps (collectively "the services"). Cookies are used
-          to ensure everyone has their best possible experience. Cookies also
-          help us keep your account safe. By continuing to visit or use our
-          services, you are agreeing to the use of cookies and similar
-          technologies for the purposes we describe in this policy. If you
-          prefer not to receive cookies or web beacons, then you should stop
-          using our site, or consult your browsing and third party cookie
-          settings as described below.
+          purplemaze.co uses cookies, tags and other technologies when you use
+          any of the purplemaze.co websites, mobile sites or mobile apps
+          (collectively "the services"). Cookies are used to ensure everyone has
+          their best possible experience. Cookies also help us keep your account
+          safe. By continuing to visit or use our services, you are agreeing to
+          the use of cookies and similar technologies for the purposes we
+          describe in this policy. If you prefer not to receive cookies or web
+          beacons, then you should stop using our site, or consult your browsing
+          and third party cookie settings as described below.
         </p>
         <h6>b. What is a cookie?</h6>
         <p>
@@ -328,22 +317,22 @@ const PrivacyPolicy = () => {
           the website. A cookie file is stored in your web browser and allows
           the Site or a third-party to recognize you and make your next visit
           easier and the Site more useful to you. Essentially, cookies are a
-          user’s identification card for the purplemaze.co
-          servers. Cookies allow purplemaze.co to serve you better
-          and more efficiently, and to personalize your experience on our site.
-          Web beacons, tags and scripts may be used in the Websites or in emails
-          to help us to deliver cookies, count visits, understand usage and
-          campaign effectiveness and determine whether an email has been opened
-          and acted upon. We may analyse or perform analysis based on the use of
-          these technologies and generate reports on an individual and
-          aggregated basis. Cookies can be "persistent" or "session" cookies. A
-          persistent cookie helps us recognize you as an existing user, so it’s
-          easier to return to purplemaze.co or interact with our
-          services without signing in again. After you sign in, a persistent
-          cookie stays in your browser and will be read by purplemaze.co
-          when you return to one of our sites or a partner site that
-          uses our services. Session cookies only last for as long as the
-          session (usually the current visit to a website or a browser session).
+          user’s identification card for the purplemaze.co servers. Cookies
+          allow purplemaze.co to serve you better and more efficiently, and to
+          personalize your experience on our site. Web beacons, tags and scripts
+          may be used in the Websites or in emails to help us to deliver
+          cookies, count visits, understand usage and campaign effectiveness and
+          determine whether an email has been opened and acted upon. We may
+          analyse or perform analysis based on the use of these technologies and
+          generate reports on an individual and aggregated basis. Cookies can be
+          "persistent" or "session" cookies. A persistent cookie helps us
+          recognize you as an existing user, so it’s easier to return to
+          purplemaze.co or interact with our services without signing in again.
+          After you sign in, a persistent cookie stays in your browser and will
+          be read by purplemaze.co when you return to one of our sites or a
+          partner site that uses our services. Session cookies only last for as
+          long as the session (usually the current visit to a website or a
+          browser session).
         </p>
         <h6>c. What are cookies used for?</h6>
         <p>
@@ -354,35 +343,34 @@ const PrivacyPolicy = () => {
           understand visitor and user preferences, improve their experience, and
           track and analyse usage, navigational and other statistical
           information. Additionally, cookies allow us to bring you advertising
-          both on and off the purplemaze.co site, and bring
-          customized features to you. You can control the use of cookies at the
-          individual browser level. If you elect not to activate the cookie or
-          to later disable cookies, you may still visit our Websites, but your
-          ability to use some features or areas of the Websites may be limited.
-          We may use any of the following categories of cookies on the Websites
-          as detailed below. Each cookie falls within one of the four following
-          categories: Category Description Essential Cookies Essential cookies
-          (First Party Cookies) are sometimes called "strictly necessary" as
-          without them we cannot provide many services that you need on the
-          Website. For example, essential cookies help remember your preferences
-          as you move around the Website. Essential cookies also keep you logged
-          in into a website. Without them the login functionality would not
-          work. Analytics Cookies These cookies track information about visits
-          to the purplemaze.co so that we can make improvements
-          and report our performance. For example: analyse visitor and user
-          behaviour so as to provide more relevant content or suggest certain
-          activities. They collect information about how visitors use the
-          Websites, which site the user came from, the number of each user’s
-          visits and how long a user stays on the Websites. We might also use
-          analytics cookies to test new ads, pages, or features to see how users
-          react to them. Functionality or Preference Cookies During your visit
-          to the Websites, cookies are used to remember information you have
-          entered or choices you make (such as your username, language or your
-          region) on the Websites. They also store your preferences when
-          personalizing the Websites to optimize your use of purplemaze.co.
-          These preferences are remembered, through the use of the
-          persistent cookies, and the next time you visit the Websites you will
-          not have to set them again.
+          both on and off the purplemaze.co site, and bring customized features
+          to you. You can control the use of cookies at the individual browser
+          level. If you elect not to activate the cookie or to later disable
+          cookies, you may still visit our Websites, but your ability to use
+          some features or areas of the Websites may be limited. We may use any
+          of the following categories of cookies on the Websites as detailed
+          below. Each cookie falls within one of the four following categories:
+          Category Description Essential Cookies Essential cookies (First Party
+          Cookies) are sometimes called "strictly necessary" as without them we
+          cannot provide many services that you need on the Website. For
+          example, essential cookies help remember your preferences as you move
+          around the Website. Essential cookies also keep you logged in into a
+          website. Without them the login functionality would not work.
+          Analytics Cookies These cookies track information about visits to the
+          purplemaze.co so that we can make improvements and report our
+          performance. For example: analyse visitor and user behaviour so as to
+          provide more relevant content or suggest certain activities. They
+          collect information about how visitors use the Websites, which site
+          the user came from, the number of each user’s visits and how long a
+          user stays on the Websites. We might also use analytics cookies to
+          test new ads, pages, or features to see how users react to them.
+          Functionality or Preference Cookies During your visit to the Websites,
+          cookies are used to remember information you have entered or choices
+          you make (such as your username, language or your region) on the
+          Websites. They also store your preferences when personalizing the
+          Websites to optimize your use of purplemaze.co. These preferences are
+          remembered, through the use of the persistent cookies, and the next
+          time you visit the Websites you will not have to set them again.
         </p>
         <h6>d. When do we place cookies?</h6>
         <p>
@@ -390,25 +378,23 @@ const PrivacyPolicy = () => {
           Any browser visiting these sites will receive cookies from us which
           helps us identify you more quickly when you return. Cookies help us to
           determine which pages or information you find most useful or
-          interesting on our own websites. purplemaze.co may also
-          have some cookies for its own analytics i.e. analytics not part of
-          Google Analytics. Such cookies help generate statistics and reports
-          about visitors and their activities on the website or app.
+          interesting on our own websites. purplemaze.co may also have some
+          cookies for its own analytics i.e. analytics not part of Google
+          Analytics. Such cookies help generate statistics and reports about
+          visitors and their activities on the website or app.
         </p>
         <h6>e. How cookies are used for online analytics purposes?</h6>
         <p>
-          We may use web analytics services on purplemaze.co, such
-          as those of Google Analytics. These services help us analyse how users
-          use the services, including by noting the third-party website from
-          which you arrive. The information collected by the technology will be
-          disclosed to or collected directly by such service providers, who use
-          the information to evaluate your use of the services. We also use
-          Google Analytics for certain purposes related to online marketing, as
+          We may use web analytics services on purplemaze.co, such as those of
+          Google Analytics. These services help us analyse how users use the
+          services, including by noting the third-party website from which you
+          arrive. The information collected by the technology will be disclosed
+          to or collected directly by such service providers, who use the
+          information to evaluate your use of the services. We also use Google
+          Analytics for certain purposes related to online marketing, as
           described in the following sections.
         </p>
-        <h6>
-          g. What third-party cookies does purplemaze.co use?
-        </h6>
+        <h6>g. What third-party cookies does purplemaze.co use?</h6>
         <p>
           Please note that the third parties (advertising networks and providers
           of external services like web traffic analysis services) may also use
@@ -502,15 +488,15 @@ const PrivacyPolicy = () => {
         </p>
         <h6>h. What are Web Beacons?</h6>
         <p>
-          purplemaze.co occasionally advertises on third party
-          websites. As part of our effort to track the success of our
-          advertising campaigns, we may at times use a visitor identification
-          technology such as "web beacons," or "action tags," which count
-          visitors who have come to our site after being exposed to a [insert
-          website domain].com banner ad on a third party site. By navigating on
-          our site, you agree that we can place cookie and web beacons on your
-          computer or device. If you prefer not to receive web beacons, then you
-          should stop using our site, or consult your browsing settings.
+          purplemaze.co occasionally advertises on third party websites. As part
+          of our effort to track the success of our advertising campaigns, we
+          may at times use a visitor identification technology such as "web
+          beacons," or "action tags," which count visitors who have come to our
+          site after being exposed to a [insert website domain].com banner ad on
+          a third party site. By navigating on our site, you agree that we can
+          place cookie and web beacons on your computer or device. If you prefer
+          not to receive web beacons, then you should stop using our site, or
+          consult your browsing settings.
         </p>
         <h6>i. How to control cookies?</h6>
         <p>
@@ -581,7 +567,7 @@ const PrivacyPolicy = () => {
           </a>
         </li>
       </div>
-      <Footer/>
+      <Footer></Footer>
     </div>
   );
 };

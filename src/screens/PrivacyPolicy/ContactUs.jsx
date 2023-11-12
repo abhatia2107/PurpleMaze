@@ -64,7 +64,7 @@ const ContactUs = () => {
           <p>
             One Orange Digital
             <br />
-            South City 2, sector 49,
+            South City 2, Sector 49,
             <br />
             Gurgaon, Haryana, India
             <br />

@@ -34,7 +34,6 @@ const ParentComponent = () => {
   return (
     <div>
       <SearchPage products={products} currentPage={currentPage} />
-      <Pagination currentPage={currentPage} onPageChange={handlePageChange} />
     </div>
   );
 };
