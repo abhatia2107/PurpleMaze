@@ -3,7 +3,6 @@ import { Field, Form, Formik } from "formik";
 import "../Home/style.css";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import PopupReset from "../Pop-Ups/PopupReset";
 import axios from "axios";
 import Navbar from "./Navbar";
 import { BASE_AUTH_URL } from "../../api/config";
@@ -70,7 +69,6 @@ const ReverificationEmail = () => {
                       }
                     />
                   </div>
-                  <PopupReset />
                   <button
                     type="submit"
                     className="btn btn-primary btn-block w-100 circular-button"

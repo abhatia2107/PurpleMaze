@@ -3,6 +3,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import "./Home/style.css";
 import { Link, useNavigate } from "react-router-dom";
+import VerifiedEmailPopup from "../screens/Pop-Ups/VerifiedEmailPopup";
 import axios from "axios";
 import moment from "moment";
 import Navbar from "./Home/Navbar";
@@ -59,6 +60,7 @@ const Login = () => {
   return (
     <div className="flex flex-col space-y-0">
       <Navbar />
+      <VerifiedEmailPopup />
       <div className="flex flex-col items-center items-stretch py-4 xl:py-0 max-h-[800px]">
         <div className="centered-container ">
           <div className="wrapper">

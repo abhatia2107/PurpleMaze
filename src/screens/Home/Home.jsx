@@ -1,5 +1,4 @@
 import React from "react";
-import VideoModal from "./VideoModal";
 import "./style.css";
 import { Footer } from "../../components/Footer";
 import Navbar from "./Navbar";
@@ -16,6 +15,7 @@ export const Home = () => {
         <div className="h-full lg:w-1/2 2xl:w-1/2 lg:h-full">
           <div className="flex flex-col px-16 py-10 lg:py-18 lg:my-6 max-w-2xl 2xl:max-w-6xl">
             <img
+              alt="main home banner"
               className="w-10 h-10 doodle_1_position"
               src="https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64c5661df29788c65e4e3a24/img/64088dfd259d863110d90801-doodle1-1-1.svg"
             />
