@@ -11,8 +11,10 @@ const Navbar = () => {
       <header className="flex header_color justify-between bx-auto py-2">
         <Link to="/">
           <div className="flex justify-center items-center px-8 py-3 sm:px-8">
-            <img src={iconimg} />
-            <h1 className="px-2 text-color font-type-quicksand">Purple Maze</h1>
+            <img src={iconimg} alt="navbar logo" />
+            <h1 className="px-2 text-color font-type-quicksand hidden sm:block">
+              Purple Maze
+            </h1>
           </div>
         </Link>
 

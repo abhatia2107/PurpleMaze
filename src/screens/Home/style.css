@@ -6,12 +6,11 @@
   width: 100%;
 }
 
-.complete_screen{
+.complete_screen {
   background-color: #fcfcfd;
-
 }
 
-.pricing_bottom{
+.pricing_bottom {
   color: #60697b;
   font-family: "Mona-Sans-RegularItalic", Helvetica;
   font-size: 16px;
@@ -20,37 +19,33 @@
   line-height: 24px;
 }
 
-
-
-.signup_color{
+.signup_color {
   background: linear-gradient(
     180deg,
     rgb(121.69, 118.07, 223.12) 0%,
     rgb(81.81, 130.56, 255) 100%
   );
 }
-.doodle_1_position{
-  margin-left: -4.25rex; 
+.doodle_1_position {
+  margin-left: -4.25rex;
   margin-bottom: -2.25rex;
 }
 
-.overall{
+.overall {
   background-color: #f0f0f8;
-
 }
 
-.content-1{
+.content-1 {
   font-family: "Mona-Sans-Medium", Helvetica;
   color: #343f52;
 }
 
-.content-2{
+.content-2 {
   color: #60697b;
   font-family: "Mona-Sans-Regular", Helvetica;
-
 }
 
-.see_pricing{
+.see_pricing {
   color: #343f52;
   font-family: "Mona-Sans-Medium", Helvetica;
 }
@@ -112,11 +107,9 @@
         transition: transform ease-out 1300ms;
         transition: all ease-out 200ms;
       }
-      
     }
   }
 }
-
 
 .home .div {
   background-color: #fcfcfd;
@@ -151,7 +144,6 @@
   width: 50%;
 }
 
-
 .home .rectangle {
   height: 720px;
   left: 55px;
@@ -184,7 +176,6 @@
   width: 10%;
 }
 
-
 .home .frame-2 {
   align-items: flex-start;
   display: inline-flex;
@@ -207,8 +198,6 @@
   position: relative;
   width: 50%;
 }
-
-
 
 .home .find-best-creatives {
   color: transparent;
@@ -560,7 +549,7 @@
 }
 
 .home .frame-8 {
-  padding-left: 8% ;
+  padding-left: 8%;
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -652,7 +641,7 @@
   position: relative;
   width: 398px;
   margin-top: -260px;
- margin-left: -270px;
+  margin-left: -270px;
 }
 
 .home .frame-13 {
@@ -1640,7 +1629,6 @@
   top: 4182px;
 }
 
-
 .home .menu-footer {
   align-items: flex-start;
   display: inline-flex;
@@ -1774,8 +1762,6 @@
   white-space: nowrap;
 }
 
-
-
 .centered-container {
   display: flex;
   justify-content: center;
@@ -1784,9 +1770,8 @@
   font-family: "Mona-Sans-Medium", Helvetica;
   margin-top: 40px;
 }
-.padding-top-50{
+.padding-top-50 {
   padding-top: 50px;
-
 }
 
 .wrapper {
@@ -1842,8 +1827,7 @@
   box-sizing: border-box;
   display: inline-block;
   cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .forgot-password-link {
@@ -1852,11 +1836,10 @@
   color: #666;
 }
 
-
 .back-link {
   display: block;
   text-align: center;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .blue-italic-style {

@@ -40,7 +40,11 @@ export default function CheckoutForm() {
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
       <PaymentElement id="payment-element" />
-      <button disabled={isProcessing || !stripe || !elements} id="submit">
+      <button
+        className="cursor-pointer"
+        disabled={isProcessing || !stripe || !elements}
+        id="submit"
+      >
         <span id="button-text">
           {isProcessing ? "Processing ... " : "Pay now"}
         </span>
