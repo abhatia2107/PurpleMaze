@@ -6,6 +6,10 @@ import EcommercePage from "../Search/EcommercePage";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { BASE_APP_URL, ROLES_LIST } from "../../api/config";
+import { ReactComponent as ArrowForward } from "../../icons/ArrowForward.svg";
+import { ReactComponent as ArrowBackward } from "../../icons/ArrowBackward.svg";
+
+import { usePagination } from "../../hooks/usePagination";
 
 export const SearchPage = () => {
   let { page } = useParams();
@@ -83,6 +87,17 @@ export const SearchPage = () => {
     setShowPageNumber(nextPage);
   }, [page]);
 
+  const onPageClick = (page) => {
+    window.location.href = `/SearchPage/${page}`;
+  };
+
+  const paginationRange = usePagination({
+    totalCount: totalPages * itemsPerPage,
+    pageSize: itemsPerPage,
+    siblingCount: 1,
+    currentPage: currentPageNumber,
+  });
+
   return (
     <div className="flex flex-col">
       <LogInHeader />
@@ -90,26 +105,45 @@ export const SearchPage = () => {
         products={products}
         setFiltersChange={handleSetFiltersChange}
       />
+
       {isPaidUser && (
         <div className="pagination py-2 pb-4">
           {currentPageNumber > 0 && (
             <button
+              className="flex"
               disabled={page === "0"}
               onClick={() =>
                 (window.location.href = `/SearchPage/${parseInt(page) - 1}`)
               }
             >
-              Previous
+              <ArrowBackward className="flex self-center mr-1" />
+              Prev Page
             </button>
           )}
-          <span>Page {showPageNumber} </span>
+          {paginationRange.map((key) => {
+            // If the pageItem is a DOT, render the DOTS unicode character
+            if (key === "...") {
+              return <span className="pagination-item dots">&#8230;</span>;
+            }
+
+            return (
+              <span
+                className={key === currentPageNumber ? "active" : null}
+                onClick={() => onPageClick(key)}
+                key={key}
+              >
+                {key}
+              </span>
+            );
+          })}
           {currentPageNumber < totalPages && (
             <button
+              className="flex"
               onClick={() =>
                 (window.location.href = `/SearchPage/${parseInt(page) + 1}`)
               }
             >
-              Next
+              Next Page <ArrowForward className="flex self-center ml-1" />
             </button>
           )}
         </div>
