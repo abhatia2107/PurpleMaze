@@ -110,25 +110,29 @@ export const SearchPage = () => {
         <div className="pagination py-2 pb-4">
           {currentPageNumber > 0 && (
             <button
-              className="flex"
+              className="flex p-1"
               disabled={page === "0"}
               onClick={() =>
                 (window.location.href = `/SearchPage/${parseInt(page) - 1}`)
               }
             >
-              <ArrowBackward className="flex self-center mr-1" />
-              Prev Page
+              <ArrowBackward className="flex self-center mx-1" />
+              <span className="hidden sm:flex pr-2 py-2">Prev Page</span>
             </button>
           )}
           {paginationRange.map((key) => {
             // If the pageItem is a DOT, render the DOTS unicode character
             if (key === "...") {
-              return <span className="pagination-item dots">&#8230;</span>;
+              return <span className="px-1">&#8230;</span>;
             }
 
             return (
               <span
-                className={key === currentPageNumber ? "active" : null}
+                className={
+                  key === currentPageNumber
+                    ? "active px-2 py-1 m-1"
+                    : "px-2 py-1 m-1"
+                }
                 onClick={() => onPageClick(key)}
                 key={key}
               >
@@ -138,12 +142,13 @@ export const SearchPage = () => {
           })}
           {currentPageNumber < totalPages && (
             <button
-              className="flex"
+              className="flex p-1"
               onClick={() =>
                 (window.location.href = `/SearchPage/${parseInt(page) + 1}`)
               }
             >
-              Next Page <ArrowForward className="flex self-center ml-1" />
+              <span className="hidden sm:flex pl-2 py-2">Next Page</span>
+              <ArrowForward className="flex self-center mx-1" />
             </button>
           )}
         </div>
