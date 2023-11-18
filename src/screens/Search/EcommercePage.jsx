@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "../Search/Category";
 import Filter from "../Search/Filter";
 import "./ecommerce.css";
-import { BASE_APP_URL, ROLES_LIST } from "../../api/config";
+import { ROLES_LIST } from "../../api/config";
 import FreeTrialInfo from "./UpgradeNow";
 import { useNavigate } from "react-router-dom";
 
-const EcommercePage = ({ products, setFiltersChange }) => {
+const EcommercePage = ({ products }) => {
   const [ads, setAds] = useState([]);
   const accessAuth = JSON.parse(localStorage.getItem("accessAuth"));
   const [freeRole, setFreeRole] = useState(true);
@@ -41,8 +41,6 @@ const EcommercePage = ({ products, setFiltersChange }) => {
     return industryMatch && subindustryMatch && typeMatch && formatMatch;
   });
   const handleSetSelectedFiltersChange = (setFilters) => {
-    setFiltersChange(setFilters);
-
     // Update URL with new filters
     const urlParams = new URLSearchParams();
     Object.entries(setFilters).forEach(([key, value]) => {
@@ -70,11 +68,21 @@ const EcommercePage = ({ products, setFiltersChange }) => {
         onSelectedFiltersChange={handleSetSelectedFiltersChange}
       />
       {freeRole ? <FreeTrialInfo onUpgradeClick={handleUpgradeClick} /> : <></>}
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center">
-        {filteredAds.map((ad) => (
-          <ProductCard key={ad.id} ad={ad} />
-        ))}
-      </div>
+      {filteredAds.length > 0 ? (
+        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center">
+          {filteredAds.map((ad) => (
+            <ProductCard key={ad.id} ad={ad} />
+          ))}
+        </div>
+      ) : (
+        <div className="flex items-center justify-center my-24 flex-col">
+          <div className="text-2xl">No Records Available</div>
+          <p className="p-2 text-center text-gray-500">
+            For applied filters no more records available, clear out filters or
+            try with other combination
+          </p>
+        </div>
+      )}
     </div>
   );
 };
