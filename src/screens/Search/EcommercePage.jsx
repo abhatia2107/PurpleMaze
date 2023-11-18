@@ -42,6 +42,15 @@ const EcommercePage = ({ products, setFiltersChange }) => {
   });
   const handleSetSelectedFiltersChange = (setFilters) => {
     setFiltersChange(setFilters);
+
+    // Update URL with new filters
+    const urlParams = new URLSearchParams();
+    Object.entries(setFilters).forEach(([key, value]) => {
+      urlParams.set(key, value);
+    });
+    const newUrl = `/SearchPage?${urlParams.toString()}`;
+
+    window.location.href = newUrl;
   };
 
   useEffect(() => {

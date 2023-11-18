@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import iconimg from "../images/iconimg.png";
@@ -9,12 +9,15 @@ export const LogoutHeader = ({
   groupClassName,
   img = "https://anima-uploads.s3.amazonaws.com/projects/64941b1b7b1311a96e83e640/releases/64d53bb23acc02a59b7cfa6b/img/--2.svg",
 }) => {
+  const [open, setOpen] = useState(false);
   return (
     <header className="flex header_color justify-between bx-auto py-2">
       <Link to="/">
         <div className="flex justify-center items-center px-8 py-3 sm:px-8">
           <img src={iconimg} />
-          <h1 className="px-2 text-color font-type-quicksand">Purple Maze</h1>
+          <h1 className="px-2 text-color font-type-quicksand hidden sm:block">
+            Purple Maze
+          </h1>
         </div>
       </Link>
 

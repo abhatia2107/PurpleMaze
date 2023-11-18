@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import "./FilterDropdown.css";
 
+export const getFiltersFromURL = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const filters = {};
+  urlParams.forEach((value, key) => {
+    filters[key] = value;
+  });
+  return filters || {};
+};
+
 const FilterDropdown = ({ data, onFilterChange }) => {
-  const [selectedFilters, setSelectedFilters] = useState({});
+  const [selectedFilters, setSelectedFilters] = useState(getFiltersFromURL());
 
   const handleFilterChange = (label, option) => {
     const tempSelectedFilters = {
