@@ -155,7 +155,10 @@
   gap: 8px;
   cursor: pointer;
 }
-.pagination span:hover {
+.pagination div {
+  cursor: pointer;
+}
+.pagination div:hover {
   background-color: rgba(96, 105, 123, 0.1);
 }
 

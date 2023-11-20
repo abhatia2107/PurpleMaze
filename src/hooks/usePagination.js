@@ -24,7 +24,7 @@ export const usePagination = ({
       paginationComponent, we return the range [1..totalPageCount]
     */
     if (totalPageNumbers >= totalPageCount) {
-      return range(1, totalPageCount);
+      return range(0, totalPageCount);
     }
 
     const leftSiblingIndex = Math.max(currentPage - siblingCount, 1);
@@ -41,12 +41,12 @@ export const usePagination = ({
     const shouldShowLeftDots = leftSiblingIndex > 2;
     const shouldShowRightDots = rightSiblingIndex < totalPageCount - 2;
 
-    const firstPageIndex = 1;
+    const firstPageIndex = 0;
     const lastPageIndex = totalPageCount;
 
     if (!shouldShowLeftDots && shouldShowRightDots) {
       let leftItemCount = 3 + 2 * siblingCount;
-      let leftRange = range(1, leftItemCount);
+      let leftRange = range(0, leftItemCount);
 
       return [...leftRange, DOTS, totalPageCount];
     }

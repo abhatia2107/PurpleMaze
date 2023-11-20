@@ -44,7 +44,9 @@ const LogInHeader = () => {
       <Link to="/">
         <div className="flex justify-center items-center px-8 sm:px-8">
           <img src={iconimg} />
-          <h1 className="px-2 text-color font-type-quicksand">Purple Maze</h1>
+          <h1 className="px-2 text-color font-type-quicksand hidden sm:block">
+            Purple Maze
+          </h1>
         </div>
       </Link>
       <div className="flex items-center px-2">
