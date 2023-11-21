@@ -20,7 +20,7 @@ const Category = ({ ad }) => {
           <img className="logo-image" src={logo_resource_url} alt={name} />
           <h2 className="name">{name}</h2>
         </div>
-        {format === "Video" ? (
+        {(format || "").toLowerCase() === "video" ? (
           <div className="video-container">
             <video controls>
               <source src={media_resource_url} type="video/mp4" />
